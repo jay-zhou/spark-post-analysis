@@ -3,13 +3,12 @@ It is simple application that loads amount of posts to data storage and do some 
 
 #The steps to run the project
 ###1. Break down the big XML file into small files to fit in the Spark engine
- ~/spark-post-analysis/target/scala-2.10/classes$ time scala stkof.BreakDownFile $HOME/spark-post-analysis/data/Posts1m-tail.xml $HOME/spark-post-analysis/data/load/
+**~/spark-post-analysis/target/scala-2.10/classes$time scala stkof.BreakDownFile $HOME/spark-post-analysis/data/Posts1m-tail.xml $HOME/spark-post-analysis/data/load/**
  
- $ du -sh load/
-  1.5G	load/
-  $ cd load
-  $ ls | wc -l
-  356454
+- $ du -sh load/
+- $ cd load
+- $ ls | wc -l
+
  
 
 
