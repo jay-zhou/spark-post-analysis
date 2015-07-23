@@ -20,4 +20,7 @@ hduser@ubuntu:~/spark-code/analyse-posts/data$ ls load/* | wc -l
 In the 8363 files, there is only one file that contains "Apache Storm" terms. 
 ![](https://cloud.githubusercontent.com/assets/13358534/8842570/d04d1c6c-30c9-11e5-8d26-1aa9e68cc290.png)
 
-Go to data/load directory to check if it is correct and it is correct. Only the file:
+Go to data/load directory to check and the result is correct. Only the file: 24750917.xml contains "Apache Storm" terms.
+![](https://cloud.githubusercontent.com/assets/13358534/8842664/039af2d2-30cb-11e5-8697-61457998dc19.png)
+
+* Before going the next step, let's mock up some data for other months by inserting some data into sof_posts_data.monthly_aggregate_astorm_post table. 
