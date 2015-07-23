@@ -12,3 +12,7 @@ hduser@ubuntu:~/spark-code/analyse-posts/data$ ls load/* | wc -l
 * Run ProcessPost to load the data to Cassandra tables:
 `time /usr/local/spark/bin/spark-submit --class stkof.ProcessPosts --master local[4] target/scala-2.10/ProcessPosts-assembly-0.1-SNAPSHOT.jar
 `
+![](https://cloud.githubusercontent.com/assets/13358534/8842423/14562f7c-30c8-11e5-8f00-a0a85c90e7ea.png)
+
+* Check the Cassandra tables
+
