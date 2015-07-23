@@ -24,6 +24,13 @@ Go to data/load directory to check and the result is correct. Only the file: 247
 ![](https://cloud.githubusercontent.com/assets/13358534/8842664/039af2d2-30cb-11e5-8697-61457998dc19.png)
 
 * Before going the next step, let's mock up some data for other months by inserting some data into sof_posts_data.monthly_aggregate_astorm_post table. 
+```
+cqlsh> insert into sof_posts_data.monthly_aggregate_astorm_post(create_year, create_month, post_count) values ('2014', '08', 3);
+cqlsh> insert into sof_posts_data.monthly_aggregate_astorm_post(create_year, create_month, post_count) values ('2014', '09', 17);
+cqlsh> insert into sof_posts_data.monthly_aggregate_astorm_post(create_year, create_month, post_count) values ('2014', '10', 12);
+cqlsh> insert into sof_posts_data.monthly_aggregate_astorm_post(create_year, create_month, post_count) values ('2014', '11', 17);
+cqlsh> select * from sof_posts_data.monthly_aggregate_astorm_post;
+```
 ![](https://cloud.githubusercontent.com/assets/13358534/8842749/1c3fa0a2-30cc-11e5-8d80-02bc362599d5.png)
 
 * Run ExtractPost to get the results
