@@ -36,4 +36,7 @@ cqlsh> select * from sof_posts_data.monthly_aggregate_astorm_post;
 * Run ExtractPost to get the results
 
 `time /usr/local/spark/bin/spark-submit --class stkof.ExtractPosts --master local[4] target/scala-2.10/ProcessPosts-assembly-0.1-SNAPSHOT.jar`
+![](https://cloud.githubusercontent.com/assets/13358534/8842813/295f7b4e-30cd-11e5-858e-d218654d2104.png)
+
+Check the result in 
 
